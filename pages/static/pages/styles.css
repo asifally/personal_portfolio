@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+/*--- Home ---*/
+.HomeBackground
+{
+    background: url(nasaHome.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    font-family: 'IBM Plex Sans';
+}
+.content
+{
+    height: 200px;
+    font-family: 'IBM Plex Sans';
+    text-align: center
+}
+
+.iam
+{
+    color: red;
+    font-Size: 50px;
+}
+
+.hello
+{
+    color: white;
+    font-size: 25px;
+}
+/*--- About ---*/
+.AboutBackground
+{
+    background-color: ##D3D3D3
+}
+
+.about
+{
+    position: relative;
+    down: -200px;
+    text-align: center
+}
+
+/*--- navigation bar ---*/
+.nav-links
+{
+    font-family: 'IBM Plex Sans';
+}
+
+/*--- scroll behavior ---*/
+html {
+  scroll-behavior: smooth;
+}
