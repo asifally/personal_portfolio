@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{% static 'pages/styles.css' %}"
-
+        <!-- icon ref -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -52,7 +53,7 @@
     <body>
         <!-- nav bar -->
         <div class="HomeBackground">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,6 +64,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Experience">Experience</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Projects">Projects</a>
@@ -96,24 +100,158 @@
                 <div class ="about-section">
                     <div class="about-section-head">
                         <center>
-                        <h2>About Me</h2>
+                        <h1 style="margin-top: 30px; color: white">About Me</h1>
                         </center>
                     </div>
-                    <div class="about-section-grids">
-                        <div class="col-md-4 about-section-grid-1">
-                            <h4></h4>
+                    <section class ="aboutscn">
+                        <div class="left-side-about">
+                            <img src="{% static "pages/asifally.png" %}" alt="Pic of me lol" style="width:250px;height:250px;
+                            margin-left: -12.5px;" />
+                            <div class="contact-info">
+                                <div class="email">
+                                    <i class="fa fa-envelope-o" style="font-size:24px; float: left;"></i>
+                                    <div class="email-addr">
+                                        <h3>allyx004@umn.edu</h3>
+                                    </div>
+                                </div>
+                                <div class="phone-number">
+                                    <i class="fa fa-mobile-phone" style="font-size:36px; float: left;"></i>
+                                    <h3>612-239-1843</h3>
+                                </div>
+                            </div>
                         </div>
+                        <div class="middle-about">
+                            <img src="{% static "pages/umn_logo.png" %}" alt="UMN Logo" style="width:250px;height:150px;
+                            margin-top: 100px;" />
+                            <div class="middle-content">
+                                <i class="fa fa-mortar-board" style="font-size:24px; float: left;"></i>
+                                <h3>Major: Physics B.A.</h3>
+                            </div>
 
+                        </div>
+                        <div class="right-side-about">
+                            <img src="{% static "pages/code_logo.png" %}" alt="tags" style="width:300px;height:200px;
+                            margin-top: 50px;" />
+                            <div class="skills">
+                                <div class="left-skills" style="float: left; margin-left: 40px;">
+                                    <h5>Proficient</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Python</li>
+                                        <li class="list-group-item">C</li>
+                                        <li class="list-group-item">Git</li>
+                                        <li class="list-group-item">Html/CSS</li>
+                                    </ul>
+                                </div>
+                                <div class="right-skills" style="float: right; margin-right: 40px;">
+                                    <h5>Familar</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Java</li>
+                                        <li class="list-group-item">C++</li>
+                                        <li class="list-group-item">JavaScript</li>
+                                        <li class="list-group-item">SQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="ExperienceBackground" id="Experience">
+                <div class="experience-section">
+                    <div class="experience-section-head">
+                        <center>
+                            <h2 style="margin-top: 30px; color: white;">Experience</h2>
+                        </center>
                     </div>
+                    <section>
+                        <div class="first-section">
+                            <div class="left-first-section">
+                                <h4 style="text-align: left;">Research Lead</h4>
+                                <h6 style="text-align: left;">May 2018 - May 2020</h6>
+                            </div>
+                            <div class="right-first-section">
+                                <h3 style="text-align: left;">NASA’s MN Space Grant Consortium</h3>
+                                <ul class="exp-list">
+                                    <li class="exp-point">Spearheaded a team of researchers in an effort to
+                                        characterize the particulate content of the stratosphere
+                                        using high altitude balloons with particle-measuring payloads
+                                        for hypersonic vehicle research
+                                    </li>
+                                    <li class="exp-point">Created and developed low-cost, particulate-measuring
+                                         payloads containing active heating systems, full custom-built
+                                          sensor suites, and optical particle counters
+                                    </li>
+                                    <li class="exp-point">
+                                        Designed, integrated, optimized, tested and debugged
+                                         flight computers and control systems to ensure successful
+                                          flight and efficient data retrieval while constantly identifying
+                                           areas for improvement and potential process efficiencies
+                                    </li>
+                                    <li class="exp-point">Delegated tasks among team members based on skillsets
+                                         and interests while providing overall guidance and
+                                         technical knowledge on an as-needed basis
+                                    </li>
+                                    <li class="exp-point">
+                                        Leveraged Knowledge in Git, payload architecture,
+                                        programmed in C++ using Arduino IDE, and debugged using
+                                        Multimeter and Oscilloscope
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="second-section">
+                            <div class="left-second-section">
+                                <h4 style="text-align: left;">Student Course Production Assistant</h4>
+                                <h6 style="text-align: left;">Aug 2017 - May 2018</h6>
+                            </div>
+                            <div class="right-second-section">
+                                <h3 style="text-align: left;">UMN – Office of Information Technology</h3>
+                                <ul class="exp-list">
+                                    <li class="exp-point">Decreased project timeline by writing a
+                                        program in Python to automate the process of transitioning
+                                        from obsolete LMS to newly designed LMS
+                                    </li>
+                                    <li class="exp-point">Improved the end-user
+                                        experience by upgrading the university-wide learning
+                                        management system (LMS).
+                                    </li>
+                                    <li class="exp-point">
+                                        Assisted in the efforts to streamline and automate the user account transfer process
+                                    </li>
+                                    <li class="exp-point">Leveraged Knowledge in Git and
+                                        programmed in Python using Atom IDE
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
             <div class="ProjectsBackground" id="Projects">
                 <div class="projects-section">
                     <div class="projects-section-head">
                         <center>
-                            <h2>Portfolio</h2>
+                            <h2 style="margin-top: 30px; color: white;">Projects</h2>
                         </center>
                     </div>
+                    <section>
+                        <div class="first-project">
+                            <h3 style="text-align: left;">Workout Tracker App</h3>
+                            <ul class="exp-list">
+                                <li class="exp-point">Developing a web application using
+                                    Python and Django that allows users to have
+                                    a personal account where they are able to record their workouts
+                                </li>
+                                <li class="exp-point">
+                                    Incorporating data storage to archive past workouts and planned future workouts
+                                </li>
+                                <li class="exp-point">Using Django’s ORM system to create a database
+                                </li>
+                                <li class="exp-point">Utilized: Python, Django, SQLite</li>
+                            </ul>
+
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>
