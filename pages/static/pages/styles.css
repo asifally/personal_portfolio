@@ -51,6 +51,9 @@ main{
     text-align: center
 }
 
+/* Skills bar */
+
+
 /* Create two columns/boxes that floats next to each other */
 .left-side-about
 {
@@ -93,7 +96,8 @@ main{
 
 .middle-content
 {
-    margin-top: 60px;
+    position: relative;
+    margin-top: 100px;
 }
 
 .right-side-about
@@ -125,6 +129,50 @@ main{
     text-align: center
 }
 
+/* timeline  */
+/* Import */
+
+
+/* Variables */
+
+
+
+@color-primary: #004ffc;
+@color-light: white;
+@color-dim: #6c6d6d;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+
+/* Base */
+
+
+
+
+strong {
+  font-weight: 600;
+}
+
+.expTitle {
+ letter-spacing: 1.5px;
+ color: white;
+ font-weight: 400;
+ font-size: 2.4em;
+}
+
+#timeline-content {
+  margin-top: @spacing;
+  text-align: center;
+}
+
+/* Timeline */
+
+/* end timeline */
 .first-section
 {
     float: left;
