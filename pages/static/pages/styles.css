@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 /*--- Home ---*/
-.HomeBackground
+.Home
 {
-    background: url(nasaHome.jpg) no-repeat center center fixed;
+    background: url(nasaHome.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5));
+    height: 100vh;
+    text-align: center;
 }
 .container
 {
@@ -23,20 +22,37 @@ main{
 }
 .content
 {
+    height: 200px;
     font-family: 'IBM Plex Sans';
     text-align: center
+}
+
+body{
+    font-family: 'IBM Plex Sans';
 }
 
 .iam
 {
     color: #7FFF00;
-    font-Size: 5vw;
+    font-Size: 6vw;
+}
+@media screen and (max-width:500px){
+    .iam{
+        color:#7FFF00;
+        font-size: 10vw;
+    }
 }
 
 .hello
 {
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
+}
+@media screen and (max-width:500px){
+    .hello{
+        color: white;
+        font-size: 6vw;
+    }
 }
 /*--- navigation bar ---*/
 .nav-links
@@ -48,9 +64,23 @@ main{
 html {
   scroll-behavior: smooth;
 }
+/* About */
+.timeblock{
+    border: 3px green;
+    border-style: solid;
+    padding: 1px;
+    display: inline-block;
+    height: 4vh;
+}
 
 /* Projects */
-#Project
-{
-    background-color: coral;
+.projects{
+    background: url(proj.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+
+  
