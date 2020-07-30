@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+/*--- Home ---*/
+.Home
+{
+    background: url(nasaHome.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    font-family: 'IBM Plex Sans';
+}
+.content
+{
+    height: 200px;
+    font-family: 'IBM Plex Sans';
+    text-align: center
+}
+
+body{
+    font-family: 'IBM Plex Sans';
+}
+
+.iam
+{
+    color: #7FFF00;
+    font-Size: 6vw;
+}
+@media screen and (max-width:500px){
+    .iam{
+        color:#7FFF00;
+        font-size: 10vw;
+    }
+}
+
+.hello
+{
+    color: white;
+    font-size: 3vw;
+}
+@media screen and (max-width:500px){
+    .hello{
+        color: white;
+        font-size: 6vw;
+    }
+}
+/*--- navigation bar ---*/
+.nav-links
+{
+    font-family: 'IBM Plex Sans';
+}
+
+/*--- scroll behavior ---*/
+html {
+  scroll-behavior: smooth;
+}
+/* About */
+.timeblock{
+    border: 3px green;
+    border-style: solid;
+    padding: 1px;
+    display: inline-block;
+    height: 4vh;
+}
+
+/* Projects */
+.projects{
+    background: url(proj.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+  
