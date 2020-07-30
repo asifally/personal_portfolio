@@ -10,15 +10,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
-SECRET_KEY = os.environ['SECRET_KEY']
+#dotenv_file = os.path.join(BASE_DIR, ".env")
+#if os.path.isfile(dotenv_file):
+#    dotenv.load_dotenv(dotenv_file)
+#SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'xr4v^&fw)(&gdv*1z*e0r=)py4!2mvd#q4mpnu639!x=)oy^!c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['18.224.37.63', 'asifally.com','www.asifally.com',]
+ALLOWED_HOSTS = ['django-env.eba-pxgdgqdv.us-west-2.elasticbeanstalk.com', 'asifally.com','www.asifally.com',]
 
 
 # Application definition
@@ -67,12 +68,12 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
 
 # Password validation
