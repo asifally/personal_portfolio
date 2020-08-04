@@ -18,7 +18,7 @@ SECRET_KEY = 'xr4v^&fw)(&gdv*1z*e0r=)py4!2mvd#q4mpnu639!x=)oy^!c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+#ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['django-env.eba-pxgdgqdv.us-west-2.elasticbeanstalk.com', 'asifally.com','www.asifally.com',]
 
 
